@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_add_favorite"
+        android:title="Add favorite"
+        android:icon="@drawable/ic_bookmark_border"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_map"
+        android:title="View forecast location in map"
+        android:icon="@drawable/ic_action_map"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_settings"
+        android:title="Settings"
+        android:icon="@drawable/ic_action_settings"
+        app:showAsAction="ifRoom"/>
+</menu>

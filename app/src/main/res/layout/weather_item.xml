@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@drawable/layout_border">
+
+    <ImageView
+        android:id="@+id/icon_imageview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/temp_min_textview"
+        app:layout_constraintEnd_toStartOf="@+id/date_textview"
+        app:layout_constraintHorizontal_weight="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/date_textview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:text="test"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toTopOf="@+id/temp_max_textview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="0.5"
+        app:layout_constraintStart_toEndOf="@id/icon_imageview"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_weight="0.5" />
+
+    <TextView
+        android:id="@+id/temp_min_textview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="test"
+        android:textColor="#66ccff"
+        android:textSize="16sp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/pop_imageview"
+        app:layout_constraintHorizontal_weight="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date_textview"
+        app:layout_constraintVertical_weight="0.25" />
+
+    <ImageView
+        android:id="@+id/pop_imageview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_precipitation"
+        android:paddingBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/pop_textview"
+        app:layout_constraintHorizontal_weight="0.20"
+        app:layout_constraintStart_toEndOf="@+id/temp_min_textview"
+        app:layout_constraintTop_toBottomOf="@+id/date_textview" />
+
+    <TextView
+        android:id="@+id/pop_textview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:text="test"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/temp_max_textview"
+        app:layout_constraintHorizontal_weight="0.20"
+        app:layout_constraintStart_toEndOf="@+id/pop_imageview"
+        app:layout_constraintTop_toBottomOf="@+id/date_textview"
+        app:layout_constraintVertical_weight="0.25" />
+
+    <TextView
+        android:id="@+id/temp_max_textview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="test"
+        android:textColor="#AA0303"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="0.5"
+        app:layout_constraintStart_toEndOf="@+id/pop_textview"
+        app:layout_constraintTop_toBottomOf="@+id/date_textview"
+        app:layout_constraintVertical_weight="0.25" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
